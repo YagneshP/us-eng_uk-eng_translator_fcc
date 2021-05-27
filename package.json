@@ -7,6 +7,9 @@
     "start": "nodemon server.js",
     "test": "mocha --timeout 5000 --require @babel/register --recursive --exit --ui tdd tests/"
   },
+	"engines": {
+    "node": "15.x"
+  },
   "dependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
