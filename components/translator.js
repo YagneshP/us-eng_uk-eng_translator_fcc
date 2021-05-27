@@ -52,7 +52,7 @@ class Translator {
 						return acc.replace(curr,highlight(changedTime) )
 					},translateString)
 				}
-				console.log("translate american to british",translateString);
+				// console.log("translate american to british",translateString);
 				return translateString;
 			}
 			/**
@@ -106,7 +106,7 @@ class Translator {
 						return acc.replace(curr,highlight(changedTime) )
 					},translateString)
 				}
-				console.log("translate british to american",translateString);
+				// console.log("translate british to american",translateString);
 				 return translateString;
 			}
 		}
