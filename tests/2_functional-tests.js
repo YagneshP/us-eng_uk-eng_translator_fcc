@@ -74,6 +74,7 @@ suite('Functional Tests', () => {
 				.end(function(err,res){
 						if(err) return done(err)
 						assert.equal(res.status,200)
+						assert.propertyVal(res.body,'text',"Mangoes are my favourite fruit.")
 						assert.propertyVal(res.body,'translation',"Everything looks good to me!")
 						done()
 				})

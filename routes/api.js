@@ -14,7 +14,7 @@ module.exports = function (app) {
 				if(locale === 'american-to-british' || locale === 'british-to-american'){ 
 						str = translator.translation(text, locale);
 							if(text === str){
-							 return res.status(200).json({text:req.text,translation:"Everything looks good to me!"})
+							 return res.status(200).json({text:req.body.text,translation:"Everything looks good to me!"})
 						 	}
 					 	return res.status(200).json({text:req.body.text,translation:str})
 					
