@@ -7,7 +7,7 @@ class Translator {
 		translation(text, locale){
 			//highlight func
 			function highlight(str){
-				return `<span class='highlight'>${str}</span>`
+				return `<span class="highlight">${str}</span>`
 			}
 			/**
 			 *  Translate American-to-British

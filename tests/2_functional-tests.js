@@ -17,8 +17,8 @@ suite('Functional Tests', () => {
 						.end(function(err,res){
 								if(err) return done(err)
 								assert.equal(res.status,200)
-								assert.propertyVal(res.body,'text',"Mangoes are my favorite fruit.")
-								assert.propertyVal(res.body,'translation',"Mangoes are my <span class='highlight'>favourite</span> fruit.")
+								assert.propertyVal(res.body,'text','Mangoes are my favorite fruit.')
+								assert.propertyVal(res.body,'translation','Mangoes are my <span class="highlight">favourite</span> fruit.')
 								done()
 						})
 			});
